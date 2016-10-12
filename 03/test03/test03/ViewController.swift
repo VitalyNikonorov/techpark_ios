@@ -61,11 +61,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pointButtonPressed(_ sender: AnyObject){
-        guard let button = sender as? UIButton else {
+        guard sender is UIButton else {
             return
         }
         
-        guard let currentText = display.text, let number = button.currentTitle else {
+        guard let currentText = display.text else {
             return
         }
         
@@ -74,9 +74,9 @@ class ViewController: UIViewController {
         }
         
         if userStartedTyping {
-            display.text = currentText + number
+            display.text = currentText + "."
         } else {
-            display.text = number
+            display.text = "0."
         }
         
         calculator.setNumber(number: displayedNumber)
