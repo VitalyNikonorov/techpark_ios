@@ -21,6 +21,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-jt-ZdV">
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="H8n-Pk-thp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -31,14 +34,6 @@
                                 <state key="normal" title="9"/>
                                 <connections>
                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpu-xY-nX8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-BD-q87">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <state key="normal" title="8"/>
-                                <connections>
-                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXP-vg-KGQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCm-xn-0dl">
@@ -201,6 +196,14 @@
                                     <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ou-ac-uMJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-BD-q87">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXP-vg-KGQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -249,7 +252,7 @@
                             <constraint firstItem="CuN-YM-aVY" firstAttribute="top" secondItem="zHx-nz-JAe" secondAttribute="top" id="Qcd-Vy-1Ce"/>
                             <constraint firstItem="nIs-zv-xdj" firstAttribute="height" secondItem="fvD-OB-eQk" secondAttribute="height" id="REK-F4-c4y"/>
                             <constraint firstItem="6WX-85-DfF" firstAttribute="width" secondItem="W80-KD-BEV" secondAttribute="width" id="TdI-fg-vNI"/>
-                            <constraint firstItem="pX8-BD-q87" firstAttribute="top" secondItem="XRh-jt-ZdV" secondAttribute="bottom" constant="8" symbolic="YES" id="Ttk-bk-u7Q"/>
+                            <constraint firstItem="pX8-BD-q87" firstAttribute="top" secondItem="XRh-jt-ZdV" secondAttribute="bottom" constant="6" id="Ttk-bk-u7Q"/>
                             <constraint firstItem="K1C-Vu-LkZ" firstAttribute="height" secondItem="fvD-OB-eQk" secondAttribute="height" id="UHD-qI-L84"/>
                             <constraint firstItem="zHx-nz-JAe" firstAttribute="width" secondItem="W80-KD-BEV" secondAttribute="width" id="UtC-bk-Ngb"/>
                             <constraint firstItem="Dyr-3r-dz2" firstAttribute="width" secondItem="W80-KD-BEV" secondAttribute="width" id="WQT-Q8-haJ"/>
