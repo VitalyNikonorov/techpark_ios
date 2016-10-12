@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     private var userStartedTyping = false
     
+    private var pointPressed = false
+    
     private let calculator = Calculator()
     
     var displayedNumber: Double {
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
     @IBAction func resetButtonPressed(_ sender: AnyObject) {
         display.text = "0"
         userStartedTyping = false
+        pointPressed = false
         calculator.setNumber(number: displayedNumber)
     }
     
@@ -54,6 +57,31 @@ class ViewController: UIViewController {
         
         displayedNumber = calculator.performOperation(operation: op)
         userStartedTyping = false
+        pointPressed = false
+    }
+    
+    @IBAction func pointButtonPressed(_ sender: AnyObject){
+        guard let button = sender as? UIButton else {
+            return
+        }
+        
+        guard let currentText = display.text, let number = button.currentTitle else {
+            return
+        }
+        
+        guard !pointPressed else {
+            return
+        }
+        
+        if userStartedTyping {
+            display.text = currentText + number
+        } else {
+            display.text = number
+        }
+        
+        calculator.setNumber(number: displayedNumber)
+        userStartedTyping = true
+        pointPressed = true
     }
     
     @IBAction func numberButtonPressed(_ sender: AnyObject) {

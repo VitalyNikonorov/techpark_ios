@@ -28,6 +28,8 @@ class Calculator {
     
     private var operations: [String: OperationType] = [
         "√": OperationType.unary(sqrt),
+        "sin": OperationType.unary(sin),
+        "cos": OperationType.unary(cos),
         "∗": OperationType.unary({ $0*$0 }),
         "π": OperationType.unary({_ in return M_PI }),
         "+": OperationType.binary({ $0 + $1 }),
