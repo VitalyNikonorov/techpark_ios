@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					9015FD8D1DA6A39B00AE8335 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3J88R4YSC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,9 +263,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3J88R4YSC;
 				INFOPLIST_FILE = test03/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.test03;
+				PRODUCT_BUNDLE_IDENTIFIER = net.nikonorov.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,9 +276,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3J88R4YSC;
 				INFOPLIST_FILE = test03/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.test03;
+				PRODUCT_BUNDLE_IDENTIFIER = net.nikonorov.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,6 +304,7 @@
 				9015FDA21DA6A39B00AE8335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
