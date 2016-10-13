@@ -36,6 +36,7 @@ class Calculator {
         "-": OperationType.binary({ $0 - $1 }),
         "/": OperationType.binary({ $0 / $1 }),
         "*": OperationType.binary({ $0 * $1 }),
+        "x^y": OperationType.binary({ pow($0, $1) }),
         "=": OperationType.equal
     ]
     
